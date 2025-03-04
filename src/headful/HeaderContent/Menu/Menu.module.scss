@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    gap: clamp(25px, 25px + (100vw - 360px) * 0.01282, 45px);
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.menuItem {
+    font-weight: 300;
+    font-size: clamp(14px, 14px + (100vw - 360px) * 0.00385, 20px);
+    cursor: pointer;
+
+    text-decoration: none;
+    color: #1a1a1a;
+}
