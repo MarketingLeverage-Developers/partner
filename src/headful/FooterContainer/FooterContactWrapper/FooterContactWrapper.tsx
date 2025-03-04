@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './FooterContactForm.module.scss';
+import styles from './FooterContactWrapper.module.scss';
 import ArrowImage from '@/assets/images/arrow.svg';
 
-const FooterContactForm = () => {
+const FooterContactWrapper = () => {
     return (
-        <div className={styles.FooterContactForm}>
+        <div className={styles.FooterContactWrapper}>
             <div className={styles.InputWrapper}>
                 <div className={styles.NameInputWrapper}>
                     <input className={styles.Input} placeholder="성함" />
@@ -29,20 +29,4 @@ const FooterContactForm = () => {
     );
 };
 
-export default FooterContactForm;
-
-const Input = () => {
-    return <input />;
-};
-
-const Checkbox = () => {
-    return <input type="checkbox" />;
-};
-
-const Button = () => {
-    return <button />;
-};
-
-const Arrow = () => {
-    return <img src={ArrowImage.src} />;
-};
+export default FooterContactWrapper;

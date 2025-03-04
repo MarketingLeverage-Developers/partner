@@ -1,0 +1,197 @@
+.IntroContactWrapper {
+    display: flex;
+    justify-content: space-around;
+
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+
+    @media (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ContentWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media (max-width: 767px) {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .TextWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .Text {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 40px;
+                color: #fff;
+
+                @media (max-width: 767px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                &.Large {
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 60px;
+
+                    @media (max-width: 767px) {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+
+        .Button {
+            width: 100%;
+            padding: 16px 0;
+            max-width: 360px;
+            box-sizing: border-box;
+            background-color: #ff7f00;
+            border: none;
+            color: #fff;
+
+            border-radius: 4px;
+
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+
+            @media (max-width: 767px) {
+                padding: 8px 0;
+                max-width: 160px;
+                border-radius: 0px;
+
+                font-size: 12px;
+            }
+        }
+    }
+
+    .IntroForm {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        width: 100%;
+        max-width: 320px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 16px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+
+        .TextWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            .Text {
+                strong {
+                    color: #ff7f00;
+                }
+                &.Title {
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+
+                &.SubTitle {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #555;
+                }
+            }
+        }
+        .InputWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            // width: 100%;
+            .Input {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+
+                width: 100%;
+
+                label {
+                    font-size: 16px;
+                }
+                input {
+                    width: 100%;
+                    height: 36px;
+                    padding: 8px 12px;
+                    box-sizing: border-box;
+                    border: none;
+                    background-color: #d9d9d9;
+                    border-radius: 4px;
+                    outline: none;
+                }
+
+                .NameInputWrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 200px;
+                }
+
+                .PhoneInputWrapper {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    max-width: 200px;
+                }
+            }
+        }
+
+        .AgreeContentWrapper {
+            width: 100%;
+            max-width: 280px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                fill: #000;
+                color: #000;
+            }
+
+            .CheckBoxTextWrapper {
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                .CheckBox {
+                    width: 16px;
+                    height: 16px;
+                }
+                .Text {
+                    font-size: 12px;
+                    color: #333;
+                }
+            }
+        }
+        .Button {
+            padding: 16px;
+            background-color: #ff7f00;
+            border: none;
+            border-radius: 8px;
+
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}

@@ -6,9 +6,8 @@ import HeaderContent from '@/headful/HeaderContent/HeaderContent';
 import Logo from '@/headful/HeaderContent/Logo/Logo';
 import Menu from '@/headful/HeaderContent/Menu/Menu';
 import FooterContainer from '@/headful/FooterContainer/FooterContainer';
-import FooterContactForm from '@/headful/FooterContainer/FooterContactForm/FooterContactForm';
-import FooterContactButtons from '@/headful/FooterContainer/FooterContactButtonWrapper/FooterContactButtonWrapper';
 import FooterContactButtonWrapper from '@/headful/FooterContainer/FooterContactButtonWrapper/FooterContactButtonWrapper';
+import FooterContactWrapper from '@/headful/FooterContainer/FooterContactWrapper/FooterContactWrapper';
 
 const pretendard = localFont({
     src: [
@@ -20,6 +19,11 @@ const pretendard = localFont({
         {
             path: '../assets/fonts/Pretendard-Medium.woff2',
             weight: '500',
+            style: 'normal',
+        },
+        {
+            path: '../assets/fonts/Pretendard-SemiBold.woff2',
+            weight: '600',
             style: 'normal',
         },
         {
@@ -55,7 +59,7 @@ export default function RootLayout({
                     <Layout.Main>{children}</Layout.Main>
                     <Layout.Footer>
                         <FooterContainer>
-                            <FooterContactForm />
+                            <FooterContactWrapper />
                             <FooterContactButtonWrapper />
                         </FooterContainer>
                     </Layout.Footer>

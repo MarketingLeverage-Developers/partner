@@ -1,0 +1,11 @@
+.IntroContainer {
+    width: 100%;
+    aspect-ratio: 1920 / 900;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 767px) {
+        aspect-ratio: 300 / 300;
+    }
+}

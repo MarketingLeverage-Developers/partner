@@ -1,0 +1,91 @@
+.DriverWrapper {
+    width: 100%;
+
+    padding: 80px;
+    box-sizing: border-box;
+
+    @media (max-width: 767px) {
+        padding: 40px 20px;
+    }
+
+    .Wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #fff;
+
+        position: relative;
+        right: 80px;
+
+        @media (max-width: 767px) {
+            right: 0;
+            border-radius: 20px;
+            padding: 16px;
+            flex-direction: column-reverse;
+        }
+
+        .TextWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media (max-width: 767px) {
+                align-items: center;
+                text-align: center;
+            }
+
+            .TitleText {
+                font-size: 32px;
+                font-weight: 600;
+
+                @media (max-width: 767px) {
+                    font-size: 24px;
+                }
+            }
+
+            .SubTitleText {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #4b4b4b;
+
+                @media (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+
+            .DescriptionText {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 60px;
+
+                @media (max-width: 767px) {
+                    font-size: 16px;
+                    line-height: 40px;
+                }
+
+                strong {
+                    color: #ff7f00;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .Image {
+            max-width: 360px;
+            border-radius: 20px;
+
+            @media (max-width: 767px) {
+                width: 70%;
+            }
+        }
+    }
+}

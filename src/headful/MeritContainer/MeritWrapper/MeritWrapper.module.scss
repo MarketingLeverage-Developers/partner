@@ -1,0 +1,86 @@
+.MeritWrapper {
+    width: 100%;
+    padding: 100px 0;
+
+    .TextWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .TitleText {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        .DescriptionText {
+            font-size: 28px;
+            font-weight: 400;
+            color: #4b4b4b;
+        }
+    }
+
+    .BackgroundWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+
+        width: 100%;
+        padding: 160px 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .CardWrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 120px;
+
+            max-width: 1400px;
+
+            .Card {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+
+                width: 100%;
+                padding: 40px;
+                box-sizing: border-box;
+                background-color: #fff;
+                border-radius: 20px;
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+                .Text {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    text-align: center;
+
+                    strong {
+                        color: #ff7f00;
+                    }
+                }
+            }
+        }
+
+        .Button {
+            max-width: 360px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            background-color: #000;
+            border-radius: 12px;
+            border: 1px solid #fff;
+
+            font-size: 24px;
+            color: #fff;
+            strong {
+                color: #ff7f00;
+            }
+        }
+    }
+}
