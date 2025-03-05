@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './MeritWrapper.module.scss';
-import MeritBackgroundImage from '@/assets/images/merit-background.png';
-import MeritImage1 from '@/assets/images/merit1.png';
-import MeritImage2 from '@/assets/images/merit2.png';
-import MeritImage3 from '@/assets/images/merit3.png';
+import MeritBackgroundImage from '@/assets/images/merit-background.webp';
+import MeritImage1 from '@/assets/images/merit1.webp';
+import MeritImage2 from '@/assets/images/merit2.webp';
+import MeritImage3 from '@/assets/images/merit3.webp';
 
 const MeritWrapper = () => {
     return (
@@ -15,7 +15,7 @@ const MeritWrapper = () => {
             <div className={styles.BackgroundWrapper} style={{ backgroundImage: `url(${MeritBackgroundImage.src})` }}>
                 <div className={styles.CardWrapper}>
                     <div className={styles.Card}>
-                        <img src={MeritImage1.src} />
+                        <img loading="lazy" src={MeritImage1.src} />
                         <div className={styles.Text}>
                             고정 노선으로 매출 평균
                             <br /> 1200만원~1400만원
@@ -23,14 +23,14 @@ const MeritWrapper = () => {
                         </div>
                     </div>
                     <div className={styles.Card}>
-                        <img src={MeritImage2.src} />
+                        <img loading="lazy" src={MeritImage2.src} />
                         <div className={styles.Text}>
                             <strong>순수익 45%~55%</strong>
                             <br /> 500만원 ~700만원 평균치
                         </div>
                     </div>
                     <div className={styles.Card}>
-                        <img src={MeritImage3.src} />
+                        <img loading="lazy" src={MeritImage3.src} />
                         <div className={styles.Text}>
                             빈차 운행 없이
                             <br /> <strong>최적 동선 확보</strong> → 수익 극대화

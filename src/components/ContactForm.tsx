@@ -120,7 +120,7 @@ const ContactForm = () => {
             <div className={styles.AgreeWrapper}>
                 <input className={styles.Check} type="checkbox" checked={isAgree} onChange={handleCheckBoxChange} />
                 <div className={styles.Text}>개인정보 수집 및 이용에 동의합니다.</div>
-                <img className={styles.Arrow} src={ArrowImage.src} />
+                <img loading="lazy" className={styles.Arrow} src={ArrowImage.src} />
             </div>
             <div className={styles.ButtonWrapper}>
                 <button disabled={submitDisabled} onClick={handleSubmitButtonClick}>

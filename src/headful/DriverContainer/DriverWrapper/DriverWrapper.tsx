@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './DriverWrapper.module.scss';
-import DriverImage from '@/assets/images/driver.png';
+import DriverImage from '@/assets/images/driver.webp';
 
 const DriverWrapper = () => {
     return (
@@ -19,7 +19,7 @@ const DriverWrapper = () => {
                         <br /> <strong>고정 노선 제공</strong>으로 안정적인 일감 확보
                     </div>
                 </div>
-                <img className={styles.Image} src={DriverImage.src} />
+                <img loading="lazy" className={styles.Image} src={DriverImage.src} />
             </div>
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './IntroContainer.module.scss';
-import IntroBackgroundImage from '@/assets/images/intro-background.png';
+import IntroBackgroundImage from '@/assets/images/intro-background.webp';
 import IntroForm from '@/components/IntroForm';
 
 const IntroContainer = () => {
@@ -16,7 +16,9 @@ const IntroContainer = () => {
                         </div>
                     </div>
 
-                    <button className={styles.Button}>파트너 물류 무료상담신청</button>
+                    <a href="#contact">
+                        <button className={styles.Button}>파트너 물류 무료상담신청</button>
+                    </a>
                 </div>
                 <IntroForm />
             </div>

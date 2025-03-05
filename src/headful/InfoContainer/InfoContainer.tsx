@@ -7,7 +7,7 @@ const InfoContainer = () => {
         <div className={styles.InfoContainer}>
             <div className={styles.InfoContent}>
                 <div className={styles.InfoWrapper}>
-                    <img src={LogoImage.src} />
+                    <img loading="lazy" src={LogoImage.src} />
                     <div className={styles.TextWrapper}>
                         <div>
                             <strong>파트너물류 / 대표자</strong> : 김용민

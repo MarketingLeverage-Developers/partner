@@ -29,12 +29,12 @@ const FixedWrapper = () => {
         <div className={styles.FixedWrapper}>
             <div className={`${styles.Contact} ${styles.Button}`}>
                 <a href="#contact">
-                    <img src={ContactImage.src} alt="Contact" />
+                    <img loading="lazy" src={ContactImage.src} alt="Contact" />
                 </a>
             </div>
             <div className={`${styles.Call} ${styles.Button}`}>
                 <a href="tel:05082010146">
-                    <img src={CallImage.src} alt="Call" />
+                    <img loading="lazy" src={CallImage.src} alt="Call" />
                 </a>
             </div>
             {showScrollTop && (

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PossibleContainer.module.scss';
-import PossibleBackgroundIamge from '@/assets/images/possible-background.png';
-import PossibleMobileBackgroundImage from '@/assets/images/possible-mobile-background.png';
+import PossibleBackgroundIamge from '@/assets/images/possible-background.webp';
+import PossibleMobileBackgroundImage from '@/assets/images/possible-mobile-background.webp';
 
 const PossibleContainer = () => {
     return (

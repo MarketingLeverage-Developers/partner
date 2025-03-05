@@ -121,7 +121,7 @@ const FooterForm = () => {
                     <p className={styles.Text}>개인정보 수집 및 이용에 동의합니다</p>
                 </div>
 
-                <img src={ArrowImage.src} />
+                <img loading="lazy" src={ArrowImage.src} />
             </div>
             <button className={styles.Button} disabled={submitDisabled} onClick={handleSubmitButtonClick}>
                 상담신청

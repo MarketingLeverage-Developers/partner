@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './ReviewContainer.module.scss';
-import ReviewImage1 from '@/assets/images/review1.png';
-import ReviewImage2 from '@/assets/images/review2.png';
-import ReviewImage3 from '@/assets/images/review3.png';
+import ReviewImage1 from '@/assets/images/review1.webp';
+import ReviewImage2 from '@/assets/images/review2.webp';
+import ReviewImage3 from '@/assets/images/review3.webp';
 
 const ReviewContainer = () => {
     return (

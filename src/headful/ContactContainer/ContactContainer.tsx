@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './ContactContainer.module.scss';
-import ContactBackgroundImage from '@/assets/images/contact-background.png';
+import ContactBackgroundImage from '@/assets/images/contact-background.webp';
 import ContactForm from '@/components/ContactForm';
 
 const ContactContainer = () => {

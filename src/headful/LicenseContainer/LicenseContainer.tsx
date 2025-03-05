@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LicenseContainer.module.scss';
-import LicenseImage from '@/assets/images/license.png';
-import LicenseBackgroundImage from '@/assets/images/license-background.png';
+import LicenseImage from '@/assets/images/license.webp';
+import LicenseBackgroundImage from '@/assets/images/license-background.webp';
 
 const LicenseContainer = () => {
     return (
@@ -24,7 +24,7 @@ const LicenseContainer = () => {
                             자격증 취득 후 <strong>화물운송업 등록</strong> 가능
                         </div>
                     </div>
-                    <img className={styles.Image} src={LicenseImage.src} />
+                    <img loading="lazy" className={styles.Image} src={LicenseImage.src} />
                 </div>
             </div>
         </div>
