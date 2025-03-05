@@ -8,6 +8,7 @@ import Menu from '@/headful/HeaderContent/Menu/Menu';
 import FooterContainer from '@/headful/FooterContainer/FooterContainer';
 import FooterContactButtonWrapper from '@/headful/FooterContainer/FooterContactButtonWrapper/FooterContactButtonWrapper';
 import FooterContactWrapper from '@/headful/FooterContainer/FooterContactWrapper/FooterContactWrapper';
+import FixedWrapper from '@/headful/FixedWrapper/FixedWrapper';
 
 const pretendard = localFont({
     src: [
@@ -63,6 +64,7 @@ export default function RootLayout({
                             <FooterContactButtonWrapper />
                         </FooterContainer>
                     </Layout.Footer>
+                    <FixedWrapper />
                 </Layout>
             </body>
         </html>

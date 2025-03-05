@@ -1,0 +1,85 @@
+.InfoContainer {
+    width: 100%;
+
+    .InfoContent {
+        width: 100%;
+        max-width: 1600px;
+        padding: 75px 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .InfoWrapper {
+            width: 100%;
+            max-width: 920px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            img {
+                width: 100%;
+                max-width: 175px;
+                aspect-ratio: 1/1;
+
+                @media (max-width: 768px) {
+                    max-width: 100px;
+                }
+            }
+
+            .TextWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                font-size: 20px;
+                color: #8d8d8d;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+
+                strong {
+                    color: #5c5c5c;
+                    font-weight: 600;
+                }
+
+                .AddressWrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        .PhoneWrapper {
+            .T {
+                font-size: 24px;
+                color: #5c5c5c;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
+            }
+
+            .Phone {
+                font-size: 40px;
+                font-weight: 700;
+                color: #ff7f00;
+                white-space: nowrap;
+
+                @media (max-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

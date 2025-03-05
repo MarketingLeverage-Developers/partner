@@ -1,0 +1,31 @@
+.FixedWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    .Button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+
+        box-shadow: 2px 4px 1px 0px rgba(0, 0, 0, 0.2);
+
+        cursor: pointer;
+
+        &.Contact {
+            background-color: #fff;
+        }
+
+        &.Call {
+            background-color: #ff7f00;
+        }
+    }
+}

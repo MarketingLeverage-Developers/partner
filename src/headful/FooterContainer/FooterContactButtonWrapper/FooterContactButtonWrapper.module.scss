@@ -12,20 +12,23 @@
         display: flex;
     }
 
-    .Button {
+    a {
         width: 100%;
-        padding: 16px;
-        background-color: #ff7f00;
-        border: none;
-
-        font-size: 12px;
-        font-weight: 700;
-        color: #fff;
-        &.Black {
-            background-color: #000;
-        }
-        &.Primary {
+        .Button {
+            width: 100%;
+            padding: 16px;
             background-color: #ff7f00;
+            border: none;
+
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            &.Black {
+                background-color: #000;
+            }
+            &.Primary {
+                background-color: #ff7f00;
+            }
         }
     }
 }

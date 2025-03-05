@@ -1,0 +1,189 @@
+.Container {
+    display: none;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    .Content {
+        width: 100%;
+        padding: 48px 20px;
+        box-sizing: border-box;
+
+        .TextWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            color: #fff;
+            .Title {
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+            .SubTitle {
+                font-size: 16px;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.PossibleContainer {
+    width: 100%;
+
+    box-sizing: border-box;
+    position: relative;
+
+    .PossibleContent {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding: 120px 40px;
+        box-sizing: border-box;
+        max-width: 1400px;
+
+        @media (max-width: 767px) {
+            padding: 40px;
+        }
+
+        .LeftWrapper {
+            // wid
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            .TextWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                .Title {
+                    font-size: 40px;
+                    font-weight: 700;
+                    position: relative;
+                }
+
+                .SubTitle {
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-weight: 400;
+                    color: #4b4b4b;
+                }
+            }
+        }
+
+        // .TopWrapper {
+        //     display: none;
+
+        //     @media (max-width: 767px) {
+        //         display: block;
+        //     }
+        // }
+
+        .RightWrapper {
+            display: flex;
+            flex-direction: column;
+            // gap: 146px;
+
+            .PointItem {
+                display: flex;
+                gap: 60px;
+
+                .PolygonWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .Dot {
+                        width: 12px;
+                        height: 12px;
+                        min-width: 12px;
+                        min-height: 12px;
+                        background-color: #929292;
+                        border-radius: 50%;
+
+                        &.Primary {
+                            background-color: #ff7f00;
+                        }
+                    }
+                    .Line {
+                        width: 2px;
+                        height: 100%;
+                        background-color: #929292;
+                    }
+                }
+
+                .TextWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    padding-bottom: 120px;
+
+                    .Title {
+                        font-size: 28px;
+                        font-weight: 700;
+                        position: relative;
+                        @media (max-width: 767px) {
+                            font-size: 24px;
+                        }
+                    }
+                    .SubTitle {
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        color: #747474;
+
+                        @media (max-width: 767px) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ImageWrapper {
+        width: 50%;
+        height: 440px;
+
+        box-sizing: border-box;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        position: absolute;
+        left: 0;
+        bottom: 120px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.HighLightWrapper {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+.HighLight {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    background-color: #ffdebd;
+    width: 100%;
+    height: 10px;
+    z-index: -1;
+    opacity: 0.7;
+}
