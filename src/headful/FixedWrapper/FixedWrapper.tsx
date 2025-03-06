@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './FixedWrapper.module.scss';
 import CallImage from '@/assets/images/call.svg';
 import ContactImage from '@/assets/images/contact.svg';
+import UpImage from '@/assets/images/up.png';
 
 const FixedWrapper = () => {
     const [showScrollTop, setShowScrollTop] = useState(false);
@@ -39,7 +40,7 @@ const FixedWrapper = () => {
             </div>
             {showScrollTop && (
                 <div onClick={scrollToTop} className={`${styles.Call} ${styles.Button}`}>
-                    맨 위로
+                    <img loading="lazy" src={UpImage.src} alt="Up" />
                 </div>
             )}
         </div>

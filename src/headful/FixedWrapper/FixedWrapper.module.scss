@@ -4,8 +4,12 @@
     gap: 10px;
 
     position: fixed;
-    bottom: 30px;
+    bottom: 120px;
     right: 30px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 
     .Button {
         display: flex;
