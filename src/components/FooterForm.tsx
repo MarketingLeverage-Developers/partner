@@ -53,7 +53,7 @@ const FooterForm = () => {
                 middlePhone,
                 lastPhone,
                 siteUrl: 'partner.kr',
-                inquireLocation: '메인-상단',
+                inquireLocation: '메인-고정',
             });
             window.alert('문의가 접수되었습니다!');
             setName('');
