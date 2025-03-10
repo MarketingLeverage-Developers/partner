@@ -52,7 +52,7 @@ const ContactForm = () => {
                 firstPhone,
                 middlePhone,
                 lastPhone,
-                siteUrl: 'partner.kr',
+                siteUrl: '파트너물류.kr',
                 inquireLocation: '메인-하단',
             });
             window.alert('문의가 접수되었습니다!');
