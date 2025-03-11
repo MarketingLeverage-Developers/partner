@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -48,7 +49,25 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="kr" suppressHydrationWarning>
+            <head>{/* 필요한 메타 태그 등 추가 */}</head>
             <body suppressHydrationWarning className={pretendard.className}>
+                {/* 인라인 스크립트: Smartlog 설정 */}
+                <Script id="smartlog-config" strategy="beforeInteractive">
+                    {`
+                      var hpt_info = {'_account':'UHPT-31021', '_server': 'a29'};
+                    `}
+                </Script>
+                {/* 외부 스크립트: Smartlog */}
+                <Script src="//cdn.smlog.co.kr/core/smart.js" strategy="beforeInteractive" charSet="utf-8" />
+                {/* noscript 태그 */}
+                <noscript>
+                    <img
+                        src="//a29.smlog.co.kr/smart_bda.php?_account=31021"
+                        style={{ display: 'none', width: 0, height: 0, border: 0 }}
+                        alt="Smartlog"
+                    />
+                </noscript>
+
                 <div id="root"></div>
                 <Layout>
                     <Layout.Header>
