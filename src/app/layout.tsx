@@ -40,6 +40,9 @@ const pretendard = localFont({
 export const metadata: Metadata = {
     title: '파트너 물류',
     description: '파트너 물류',
+    icons: {
+        icon: '/favicon.ico', // public 폴더에 있는 favicon.ico 파일을 사용
+    },
 };
 
 export default function RootLayout({
