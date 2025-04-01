@@ -10,12 +10,11 @@ interface ApiCallerProps {
 
 export default function ApiCaller({ onDataFetched }: ApiCallerProps) {
     const searchParams = useSearchParams();
-    const n_query = searchParams.get('n_query');
-
+    0;
     useEffect(() => {
-        // n_query 값이 있을 경우에만 utm_query를 추가합니다.
         const baseUrl = `${process.env.NEXT_PUBLIC_API_URL}/client/home`;
-        const url = n_query ? `${baseUrl}?utm_term=${n_query}` : baseUrl;
+        const queryString = searchParams.toString();
+        const url = queryString ? `${baseUrl}?${queryString}` : baseUrl;
 
         fetch(url, {
             next: { revalidate: 60 },
@@ -32,7 +31,7 @@ export default function ApiCaller({ onDataFetched }: ApiCallerProps) {
             .catch((err) => {
                 console.error(err);
             });
-    }, [n_query, onDataFetched]);
+    }, [onDataFetched]);
 
     return <div>{/* 필요에 따라 데이터를 렌더링하거나 다른 컴포넌트로 전달할 수 있습니다 */}</div>;
 }
